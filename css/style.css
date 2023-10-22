@@ -361,8 +361,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .center {
-  padding-left: calc(50vw - 720px);
-  padding-right: calc(50vw - 720px);
+  padding-left: calc(50vw - 550px);
+  padding-right: calc(50vw - 550px);
 }
 
 .btn {
@@ -414,10 +414,12 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  position: absolute;
+  width: 100%;
 }
 
 .offer {
-  padding-top: 110px;
+  padding-top: 241px;
   padding-bottom: 160px;
   background-image: url(".img/photo_main_offer.jpg");
   background-position: center;
