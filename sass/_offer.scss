@@ -1,5 +1,5 @@
 .offer{
-    padding-top: 241px;
+    // padding-top: 241px;
     padding-bottom: 160px;
     background-image: url("../img/photo_main_offer.jpg");
     background-position: center;
@@ -7,7 +7,8 @@
     background-size: cover;
     color: #fff;
     &__title{
-        max-width: 534px;
+        padding-top: 241px;
+        max-width: 554px;
         font-size: 48px;
         line-height: 1.5;
         margin: 0 0 55px;

@@ -13,5 +13,9 @@
   line-height: 1.33;
   color: #2D5E5E;
 }
+.services__description {
+  font-weight: 500;
+  line-height: 1.5;
+}
 
 /*# sourceMappingURL=services.css.map */

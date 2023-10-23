@@ -20,6 +20,7 @@
   margin: 0;
   margin-top: 50px;
   margin-bottom: 35px;
+  font-weight: 700;
 }
 .aboutme__buttons {
   display: flex;
