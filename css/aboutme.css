@@ -1,0 +1,38 @@
+.aboutme {
+  display: flex;
+  gap: 50px;
+  color: #fff;
+  height: 450px;
+}
+.aboutme__item {
+  padding-top: 60px;
+}
+.aboutme__title {
+  font-size: 36px;
+  line-height: 54px;
+  margin: 0;
+}
+.aboutme__description {
+  line-height: 24px;
+  margin-bottom: 35px;
+  width: 625px;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+.aboutme__buttons {
+  display: flex;
+  gap: 30px;
+}
+.aboutme__img {
+  height: 330px;
+  width: 495px;
+  padding-top: 60px;
+}
+
+.btn_about_question {
+  background: none;
+  border: 2px solid #2D5E5E;
+}
+
+/*# sourceMappingURL=aboutme.css.map */
