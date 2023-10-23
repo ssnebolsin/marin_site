@@ -1,0 +1,36 @@
+.aboutme{
+    display: flex;
+    // background-image: url(".img/about_rectangle.jpg");
+    gap: 50px;
+    color: #fff;
+    height: 450px;
+&__item{
+    padding-top: 60px;
+}
+&__title{
+    font-size: 36px;
+    line-height: 54px;
+    margin: 0;
+}
+&__description{
+    line-height: 24px;
+    margin-bottom: 35px;
+    width: 625px;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+&__buttons{
+    display: flex;
+    gap: 30px;
+}
+&__img{
+    height: 330px;
+    width: 495px;
+    padding-top: 60px;
+}
+}
+.btn_about_question{
+    background: none;
+    border: 2px solid #2D5E5E;
+}

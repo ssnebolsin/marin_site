@@ -361,8 +361,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .center {
-  padding-left: calc(50vw - 720px);
-  padding-right: calc(50vw - 720px);
+  padding-left: calc(50vw - 584px);
+  padding-right: calc(50vw - 584px);
+}
+
+.btn {
+  border: none;
+  background: #2D5E5E;
+  border-radius: 10px;
+  padding: 8px, 42px;
+  white-space: nowrap;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.33;
+  height: 40px;
+  width: 250px;
+}
+.btn:hover, .btn:focus {
+  opacity: 0.7;
+}
+.btn:active {
+  opacity: 0.4;
 }
 
 .nav__list {
@@ -390,6 +414,83 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  position: absolute;
+  width: 100%;
+}
+
+.offer {
+  padding-top: 241px;
+  padding-bottom: 160px;
+  background-image: url(".img/photo_main_offer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.offer__title {
+  max-width: 534px;
+  font-size: 48px;
+  line-height: 1.5;
+  margin: 0 0 55px;
+}
+.offer__desc {
+  font-size: 24px;
+  line-height: 1.5;
+  max-width: 325px;
+  margin: 0 0 55px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+  padding-bottom: 37px;
+}
+.services__item {
+  max-width: 300px;
+  text-align: center;
+}
+.services__title {
+  font-size: 24px;
+  line-height: 1.33;
+  color: #2D5E5E;
+}
+
+.aboutme {
+  display: flex;
+  gap: 50px;
+  color: #fff;
+  height: 450px;
+}
+.aboutme__item {
+  padding-top: 60px;
+}
+.aboutme__title {
+  font-size: 36px;
+  line-height: 54px;
+  margin: 0;
+}
+.aboutme__description {
+  line-height: 24px;
+  margin-bottom: 35px;
+  width: 625px;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+.aboutme__buttons {
+  display: flex;
+  gap: 30px;
+}
+.aboutme__img {
+  height: 330px;
+  width: 495px;
+  padding-top: 60px;
+}
+
+.btn_about_question {
+  background: none;
+  border: 2px solid #2D5E5E;
 }
 
 /*# sourceMappingURL=style.css.map */

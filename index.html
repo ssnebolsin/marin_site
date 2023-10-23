@@ -11,8 +11,8 @@
         <a class="logo" href="">
             <img src="img/logo.svg" alt="">
         </a>
-        <nav class="nav">
-            <ul class="nav__list">
+        <nav class="nav center">
+            <ul class="nav__list center">
                 <li class="nav__item"><a class="nav__link nav__link_active" href="">Главная</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Мероприятия</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
@@ -21,22 +21,27 @@
         </nav>
     </header>
     <main>
-        <section class="offer">
-            <h1>
+        <section class="offer center">
+            <style type="text/css">
+                .offer{
+                    background-image: url("img/photo_main_offer.jpg");
+                }
+            </style>
+            <h1 class="offer__title">
                 Ваш личный психолог
                 В Кривом Роге
             </h1>
-            <p>
+            <p class="offer__desc">
                 Личные семейные и 
                 групповые консультации
             </p>
-            <a class="button" href="">
+            <a class="btn" href="">
                 УЗНАТЬ БОЛЬШЕ
             </a>
         </section>
-        <section class="services">
+        <section class="services center">
             <article class="services__item">
-                <img class="services__icon" src="" alt="">
+                <img class="services__icon" src="img/goal.svg" alt="">
                 <h2 class="services__title">Личные консультации</h2>
                 <p class="services_description">
                     Достижения поставленных целей
@@ -46,7 +51,7 @@
                 </p>
             </article>
             <article class="services__item">
-                <img class="services__icon" src="" alt="">
+                <img class="services__icon" src="img/family-room.svg" alt="">
                 <h2 class="services__title">Семейная терапия</h2>
                 <p class="services_description">
                     У любой семьи бывают кризисные 
@@ -56,7 +61,7 @@
                 </p>
             </article>
             <article class="services__item">
-                <img class="services__icon" src="" alt="">
+                <img class="services__icon" src="img/network.svg" alt="">
                 <h2 class="services__title">Сенситивные группы</h2>
                 <p class="services_description">
                     Групповые занятия — отличное 
@@ -66,7 +71,12 @@
                 </p>
             </article>
         </section>
-        <section class="aboutme">
+        <section class="aboutme center">
+            <style>
+                .aboutme{
+                    background-image: url("img/about_rectangle.jpg");
+                }
+            </style>
             <article class="aboutme__item">
                 <h2 class="aboutme__title">
                     Немного обо мне
@@ -80,11 +90,11 @@
                     члены предложения залетают прямо.
                 </p>
                 <div class="aboutme__buttons">
-                    <a class="aboutme__button" href=""></a>
-                    <a class="aboutme__button" href=""></a>
+                    <a class="btn btn_about_question" href="">Задать вопрос</a>
+                    <a class="btn" href="">Хочу консультацию</a>    
                 </div>
             </article>
-            <img class="aboutme__img" src="" alt="">
+            <img class="aboutme__img" src="img/about_photo.jpg" alt="">
         </section>
 
         <footer>
