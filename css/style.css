@@ -421,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
 .offer {
   padding-top: 241px;
   padding-bottom: 160px;
-  background-image: url(".img/photo_main_offer.jpg");
+  background-image: url("../img/photo_main_offer.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -458,6 +458,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .aboutme {
   display: flex;
+  background-image: url("../img/about_rectangle.jpg");
   gap: 50px;
   color: #fff;
   height: 450px;
