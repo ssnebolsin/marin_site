@@ -330,21 +330,21 @@ template {
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("..fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("..fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("..fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("..fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url("..fonts/Oswald/Oswald-Bold.woff2") format("woff2"), url("..fonts/Oswald/Oswald-Bold.woff") format("woff");
+  src: url("../fonts/Oswald/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald/Oswald-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .offer__title {
   padding-top: 241px;
-  max-width: 554px;
+  max-width: 454px;
   font-size: 48px;
   line-height: 1.5;
   margin: 0 0 55px;
