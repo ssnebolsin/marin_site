@@ -16,7 +16,9 @@
         border-radius: 10px;
         height: 40px;
         font-size: 18px;
-        padding-left: 20px;
+        line-height: 24px;
+        padding: 8px 0px 8px 20px;
+        box-sizing: border-box;
     }
     &__input_area{
         height: auto;
