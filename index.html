@@ -89,19 +89,23 @@
         <section class="form center">
             <h2 class="form__title">Записаться на прием</h2>
             <div class="form__inputs">
-                <input class="form__input" type="text" name="username" required placeholder="Ваше имя *">
-                <input class="form__input" type="tel" name="usertel" required placeholder="Ваш телефон *">
-                <select class="form__input" name="meeting-topic" required>
-                    <option value="" disabled selected hidden>Тема встречи *</option>
-                    <option value="family">Семейный дела</option>
-                    <option value="auto">Авто страхование</option>
-                    <option value="criminal">Криминальные дела</option>
-                </select>
-                <textarea class="form__input form__input_area" name="Comments" id="" cols="30" rows="5" placeholder="Пожелания"></textarea>
+                <input class="form__input form__input-paddings" type="text" name="username" required placeholder="Ваше имя *">
+                <input class="form__input form__input-paddings" type="tel" name="usertel" required placeholder="Ваш телефон *">
+                <label class="form__input form__select-wrap">
+                    <select class="form__select-wrap_select form__input-paddings"  name="meeting-topic" required>
+                        <option value="" disabled selected hidden>Тема встречи *</option>
+                        <option value="family">Семейный дела</option>
+                        <option value="auto">Авто страхование</option>
+                        <option value="criminal">Криминальные дела</option>
+                    </select>
+                </label>
+                <textarea class="form__input form__input_area form__input-paddings" name="Comments" id="" cols="30" rows="5" placeholder="Пожелания"></textarea>
             </div>
             <label class="form__checkbox">
-                <input class="form__input-checkbox" type="checkbox">
-                Я согласен с политикой конфиденциальности
+                <input class="form__checkbox_input visually-hidden" type="checkbox">
+                <span class="form__checkbox_label">
+                    Я согласен с политикой конфиденциальности
+                </span>
             </label>
             <button class="btn btn_form" type="submit">Отправить</button>
         </section>

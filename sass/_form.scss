@@ -17,8 +17,10 @@
         height: 40px;
         font-size: 18px;
         line-height: 24px;
-        padding: 8px 0px 8px 20px;
         box-sizing: border-box;
+    }
+    &__input-paddings{
+        padding: 8px 20px;
     }
     &__input_area{
         height: auto;
@@ -31,41 +33,96 @@
     }
     &__input:nth-child(3){
         order: 4;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        background-image: url("../img/sort-down.png");
-        background-repeat: no-repeat;
-        background-position-x: 96%;
-        background-position-y: 8px;
     }
     &__input:nth-child(4){
         grid-row: span 3;
         order: 2;
     }
+    &__select-wrap{
+        position: relative;
+
+    &_select{
+        appearance: none;
+        border: none;
+        background: none;
+        width: 100%;
+        height: 100%;
+    }
+    &_select:focus{
+        border-radius: 10px;
+    }
+
+    &:before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("../img/sort-down.png") center no-repeat;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        pointer-events: none;
+    }
+    &:focus-within{
+        &:before{
+            transform: scale(1,-1);
+        }
+    }
+}
+
     &__checkbox{
         display: block;
         margin: 40px;
         color: #2D5E5E;
         font-size: 12px;
         font-weight: 500;
+        padding-left: 30px;
         text-align: center;
+        position: relative;
+    &_label{
+        display: block;
+        padding-top: 5px;
     }
-    &__input-checkbox{
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        color: currentColor;
+    &_label:after,
+    &_label:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left:395px;
+        transform: translateY(-50%);
+        box-sizing: border-box;
+    }
+    &_label:before{
+        background: #FFF;
+        border: 1px solid currentColor;
+        width: 15px;
+        height: 15px;
+    }
+    &_label:after{
+        background: currentColor;
         width: 11px;
         height: 11px;
-        border: 0.15em solid currentColor;
-        margin-right: 7px;
+        // top: 2px;
+        left: 397px;
+        display: none;
     }
-    &__input-checkbox:checked{
-        background-color: currentColor;
+    &_input:checked + &_label:after{
+        display: block;
     }
+    }
+    // &__input-checkbox{
+    //     appearance: none;
+    //     color: currentColor;
+    //     width: 11px;
+    //     height: 11px;
+    //     border: 0.15em solid currentColor;
+    //     margin-right: 7px;
+    // }
+
     &__input::placeholder{
         color: #000;
     }
-
 }
 .btn_form{
     display: block;
