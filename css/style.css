@@ -630,4 +630,39 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 60px;
 }
 
+.info {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid;
+  gap: 90px;
+  color: #fff;
+  background: url("../img/counterbg.jpg") center no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.info__item {
+  max-width: 300px;
+  padding: 60px 0px;
+  text-align: center;
+}
+.info__header-value {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 900;
+  margin: 0;
+  padding-bottom: 14px;
+}
+.info__header-name {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.info__description {
+  line-height: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
