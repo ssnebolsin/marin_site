@@ -4,12 +4,15 @@
         padding-bottom: 50px;
         font-size: 48px;
         text-align: center;
+
     }
     &__inputs{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 30px;
+        padding-left: calc(50vw - 390px);
+        padding-right: calc(50vw - 395px);
     }
     &__input{
         border: 1px solid;
