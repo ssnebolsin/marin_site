@@ -705,4 +705,31 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.last-articles {
+  color: #fff;
+  background: url("../img/counterbg_last_articles.jpg") center no-repeat;
+  background-size: cover;
+}
+.last-articles__title {
+  margin: 0;
+  font-size: 48px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.last-articles__wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: currentColor;
+  gap: 84px;
+}
+.last-articles__item {
+  max-width: 334px;
+}
+.last-articles__header {
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 28px;
+  line-height: 32px;
+}
+
 /*# sourceMappingURL=style.css.map */

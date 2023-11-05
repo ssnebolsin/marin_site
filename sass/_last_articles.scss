@@ -1,0 +1,26 @@
+.last-articles{
+    color: #fff;
+    background: url("../img/counterbg_last_articles.jpg") center no-repeat;
+    background-size: cover;
+&__title{
+    margin: 0;
+    font-size: 48px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+&__wrapper{
+    display: flex;
+    justify-content: space-between;
+    color: currentColor;
+    gap: 84px;
+}
+&__item{
+    max-width: 334px;
+}
+&__header{
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 28px;
+    line-height: 32px;
+}
+}
