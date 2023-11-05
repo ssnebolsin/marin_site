@@ -79,6 +79,9 @@
         padding-left: 30px;
         text-align: center;
         position: relative;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
     &_label{
         display: block;
         padding-top: 5px;
@@ -89,8 +92,9 @@
         display: block;
         position: absolute;
         top: 50%;
-        left:395px;
-        transform: translateY(-50%);
+        left: 50%;
+        translate: -50% -50%;
+        left: auto;
         box-sizing: border-box;
     }
     &_label:before{
@@ -103,26 +107,17 @@
         background: currentColor;
         width: 11px;
         height: 11px;
-        // top: 2px;
-        left: 397px;
         display: none;
     }
     &_input:checked + &_label:after{
         display: block;
     }
     }
-    // &__input-checkbox{
-    //     appearance: none;
-    //     color: currentColor;
-    //     width: 11px;
-    //     height: 11px;
-    //     border: 0.15em solid currentColor;
-    //     margin-right: 7px;
-    // }
 
     &__input::placeholder{
         color: #000;
     }
+
 }
 .btn_form{
     display: block;
