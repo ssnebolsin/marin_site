@@ -667,4 +667,42 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 63px;
+}
+.feedback__header {
+  font-size: 48px;
+  line-height: 72px;
+}
+.feedback__item-wrapper {
+  display: flex;
+  gap: 43px;
+}
+.feedback__item {
+  width: 600px;
+  background-color: #ADDDDE;
+}
+.feedback__title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.feedback__name {
+  font-weight: 500;
+  color: #2D5E5E;
+  font-size: 18px;
+}
+.feedback__description {
+  margin: 0;
+  padding: 20px 25px;
+  line-height: 24px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
