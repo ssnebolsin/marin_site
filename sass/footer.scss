@@ -1,0 +1,25 @@
+.footer{
+    background: #2D5E5E;
+    display: flex;
+    gap: 50px;
+    &__logo{
+        padding: 60px 0;
+    }
+    &__contacts{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        gap: 30px;
+    }
+    &__item{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    &__img{
+        width: 18px;
+        height: 18px;
+        align-items: center;
+    }
+
+}
