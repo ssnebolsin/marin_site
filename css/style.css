@@ -779,4 +779,41 @@ h1, h2, h3, h4, h5, h6 {
   color: #2D5E5E;
 }
 
+.contacts {
+  position: relative;
+}
+.contacts__map {
+  display: block;
+}
+.contacts__details {
+  display: block;
+  position: absolute;
+  background: #ADDDDE;
+  width: 100%;
+  max-width: 477px;
+  top: 128px;
+  left: 1228px;
+  box-sizing: border-box;
+}
+.contacts__details:last-child {
+  padding-bottom: 21px;
+}
+.contacts__header {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2D5E5E;
+  padding-left: 30px;
+  margin: 0;
+  padding-top: 29.4px;
+  padding-bottom: 9.03px;
+  line-height: 72px;
+}
+.contacts__details-item {
+  font-weight: 500;
+  padding-left: 30px;
+  margin: 0;
+  margin: 10px 0;
+  line-height: 24px;
+}
+
 /*# sourceMappingURL=style.css.map */
