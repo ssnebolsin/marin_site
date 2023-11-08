@@ -4,7 +4,6 @@
         padding-bottom: 50px;
         font-size: 48px;
         text-align: center;
-
     }
     &__inputs{
         display: grid;
@@ -120,10 +119,44 @@
     &__input::placeholder{
         color: #000;
     }
+    &__discount-title{
+        margin: 0;
+        padding: 60px 0px;
+
+    }
+    &__inputs-discount{
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        // padding-left: 135px;
+        // padding-right: 135px;
+        padding-left: calc(50vw - 584px);
+        padding-right: calc(50vw - 584px);
+    }
+    &__discount-flex-item:nth-child(1){
+        order: 1;
+        width: 360px;
+    }
+    &__discount-flex-item:nth-child(2){
+        order: 2;
+        width: 360px;
+    }
+    &__discount-flex-item:nth-child(3){
+        order: 3;
+        width: 360px;
+    }
+    &__checkbox_discount{
+        margin-top: 25px;
+        margin-bottom: 60px;
+    }
 
 }
 .btn_form{
     display: block;
     margin: auto;
     margin-bottom: 60px;
+    cursor: pointer;
+}
+.btn_form-discount{
+    margin: 0;
 }
