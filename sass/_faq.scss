@@ -2,6 +2,10 @@
 padding-left: calc(50vw - 550px);
 padding-right: calc(50vw - 550px);
 padding-bottom: 40px;
+@media screen and (max-width: 1200px) {
+    padding-left: calc(50vw - 550px);
+    padding-right: calc(50vw - 550px);
+}
 
 &__item{
     margin-bottom: 20px;

@@ -14,6 +14,9 @@
 &__item{
     width: 600px;
     background-color: #ADDDDE;
+    @media screen and (max-width: 500px) {
+        width: 240px;
+    }
 }
 &__title-wrapper{
     display: flex;
@@ -22,6 +25,9 @@
     gap: 32px;
     padding-top: 20px;
     padding-bottom: 10px;
+    @media screen and (max-width: 500px) {
+        gap: 20px;
+    }
 }
 &__name{
     font-weight: 500;

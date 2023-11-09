@@ -1,5 +1,6 @@
 .contacts{
     position: relative;
+
     &__map{
         display: block;
     }
@@ -14,6 +15,20 @@
         box-sizing: border-box;
         &:last-child{
             padding-bottom: 21px;
+        }
+        @media screen and (max-width: 1950px) {
+            left: 1228px;
+        }
+        @media screen and (max-width: 1825px) {
+            left: 1028px;
+        }
+        @media screen and (max-width: 900px) {
+            display: block;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            left: 0px;
+            top: 10px;
         }
     }
     &__header{
