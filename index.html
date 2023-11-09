@@ -86,11 +86,185 @@
             </article>
             <img class="aboutme__img" src="img/about_photo.jpg" alt="">
         </section>
-
-        <footer>
-
+        <section class="form">
+            <h2 class="form__title">Записаться на прием</h2>
+            <div class="form__inputs">
+                <input class="form__input form__input-paddings" type="text" name="username" required placeholder="Ваше имя *">
+                <input class="form__input form__input-paddings" type="tel" name="usertel" required placeholder="Ваш телефон *">
+                <label class="form__input form__select-wrap">
+                    <select class="form__select-wrap_select form__input-paddings"  name="meeting-topic" required>
+                        <option value="" disabled selected hidden>Тема встречи *</option>
+                        <option value="family">Семейный дела</option>
+                        <option value="auto">Авто страхование</option>
+                        <option value="criminal">Криминальные дела</option>
+                    </select>
+                </label>
+                <textarea class="form__input form__input_area form__input-paddings" name="Comments" id="" cols="30" rows="5" placeholder="Пожелания"></textarea>
+            </div>
+            <label class="form__checkbox">
+                <input class="form__checkbox_input visually-hidden" type="checkbox">
+                <span class="form__checkbox_label">
+                    Я согласен с политикой конфиденциальности
+                </span>
+            </label>
+            <button class="btn btn_form" type="submit">Отправить</button>
+        </section>
+        <section class="info center">
+            <article class="info__item">
+                <p class="info__header-value">120 мин</p>
+                <h2 class="info__header-name">Время консультации</h2>
+                <p class="info__description">Оптимально для того, чтобы найти выход и сделать очередной шаг</p>
+            </article>
+            <article class="info__item">
+                <p class="info__header-value">от 200 грн</p>
+                <h2 class="info__header-name">Стоимость</h2>
+                <p class="info__description">Цена доступна для любого <br> человека, нуждающего в помощи</p>
+            </article>
+            <article class="info__item">
+                <p class="info__header-value">75+</p>
+                <h2 class="info__header-name">Довольных клиентов</h2>
+                <p class="info__description">Результат — улыбка на лице и ощущение счастья</p>
+            </article>
+        </section>
+        <section class="feedback">
+            <h2 class="feedback__header">
+                Отзывы клиентов
+            </h2>
+            <div class="feedback__item-wrapper">
+                <img src="./img/Vector_left.svg" alt="">
+                <article class="feedback__item">
+                    <div class="feedback__title-wrapper">
+                        <img class="feedback__img" src="./img/girl.png" alt="">
+                        <p class="feedback__name">Марина, 25 лет</p>
+                    </div>
+                    <p class="feedback__description">
+                        Обратилась к Сергею, потому что нервы уже были на пределе. 
+                        Ситуация казалась мне безвыходной – несмотря на то, что я 
+                        работаю и учусь. Сама не заметила, как избавилась от огромного 
+                        кома. Наконец-то увидела выход из сложившейся ситуации и 
+                        теперь есть надежда... Большое спасибо Валентину.
+                    </p>
+                </article>
+                <img src="./img/Vector_right.svg" alt="">
+            </div>
+        </section>
+        <section class="last-articles center">
+            <h2 class="last-articles__title">Последние статьи</h2>
+            <div class="last-articles__wrapper">
+                <article class="last-articles__item">
+                    <img src="/img/news-1.jpg" alt="">
+                    <h2 class="last-articles__header">
+                        Жить, а не бояться: как справляться с <br> канцерофобией
+                    </h2>
+                </article>
+                <article class="last-articles__item">
+                    <img src="/img/news-2.jpg" alt="">
+                    <h2 class="last-articles__header">
+                        Брат мой, враг мой: почему враждуют братья и сестры?
+                    </h2>
+                </article>
+                <article class="last-articles__item">
+                    <img src="/img/news-3.jpg" alt="">
+                    <h2 class="last-articles__header">
+                        8 советов, как оставаться продуктивным и не сойти с ума
+                    </h2>
+                </article>
+            </div>
+        </section>
+        <section class="faq">
+            <h2 class="faq__header">Частые вопросы</h2>
+            <details class="faq__item" open>
+                <summary class="faq__toggler">
+                    <svg class="faq__svg-marker" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.9146 8.6046H11.3953V1.08527C11.3953 0.742732 10.9302 0 9.99999 0C9.06977 0 8.60463 0.742772 8.60463 1.08527V8.60464H1.0853C0.742803 8.6046 3.05176e-05 9.06973 3.05176e-05 9.99992C3.05176e-05 10.9301 0.742803 11.3953 1.0853 11.3953H8.60467V18.9146C8.60467 19.2571 9.06977 19.9999 10 19.9999C10.9303 19.9999 11.3954 19.2571 11.3954 18.9146V11.3953H18.9148C19.2572 11.3953 20 10.9302 20 9.99992C20 9.06965 19.2571 8.6046 18.9146 8.6046Z"/>
+                    </svg>
+                    <h2 class="faq__title">Какой у вас график работы?</h2>
+                </summary>
+                <div class="faq__content">
+                    Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00. 
+                    Записаться на прием <br> можно в любой день с 9:00 до 21:00
+                </div>
+            </details>
+            <details class="faq__item">
+                <summary class="faq__toggler">
+                    <svg class="faq__svg-marker" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.9146 8.6046H11.3953V1.08527C11.3953 0.742732 10.9302 0 9.99999 0C9.06977 0 8.60463 0.742772 8.60463 1.08527V8.60464H1.0853C0.742803 8.6046 3.05176e-05 9.06973 3.05176e-05 9.99992C3.05176e-05 10.9301 0.742803 11.3953 1.0853 11.3953H8.60467V18.9146C8.60467 19.2571 9.06977 19.9999 10 19.9999C10.9303 19.9999 11.3954 19.2571 11.3954 18.9146V11.3953H18.9148C19.2572 11.3953 20 10.9302 20 9.99992C20 9.06965 19.2571 8.6046 18.9146 8.6046Z"/>
+                    </svg>
+                    <h2 class="faq__title">Сколько длиться сессия?</h2>
+                </summary>
+            </details>
+            <details class="faq__item">
+                <summary class="faq__toggler">
+                    <svg class="faq__svg-marker" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.9146 8.6046H11.3953V1.08527C11.3953 0.742732 10.9302 0 9.99999 0C9.06977 0 8.60463 0.742772 8.60463 1.08527V8.60464H1.0853C0.742803 8.6046 3.05176e-05 9.06973 3.05176e-05 9.99992C3.05176e-05 10.9301 0.742803 11.3953 1.0853 11.3953H8.60467V18.9146C8.60467 19.2571 9.06977 19.9999 10 19.9999C10.9303 19.9999 11.3954 19.2571 11.3954 18.9146V11.3953H18.9148C19.2572 11.3953 20 10.9302 20 9.99992C20 9.06965 19.2571 8.6046 18.9146 8.6046Z"/>
+                    </svg>
+                    <h2 class="faq__title">Сколько стоит консультация?</h2>
+                </summary>
+            </details>
+            <details class="faq__item">
+                <summary class="faq__toggler">
+                    <svg class="faq__svg-marker" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.9146 8.6046H11.3953V1.08527C11.3953 0.742732 10.9302 0 9.99999 0C9.06977 0 8.60463 0.742772 8.60463 1.08527V8.60464H1.0853C0.742803 8.6046 3.05176e-05 9.06973 3.05176e-05 9.99992C3.05176e-05 10.9301 0.742803 11.3953 1.0853 11.3953H8.60467V18.9146C8.60467 19.2571 9.06977 19.9999 10 19.9999C10.9303 19.9999 11.3954 19.2571 11.3954 18.9146V11.3953H18.9148C19.2572 11.3953 20 10.9302 20 9.99992C20 9.06965 19.2571 8.6046 18.9146 8.6046Z"/>
+                    </svg>
+                    <h2 class="faq__title">Что из себя представляют консультации?</h2> 
+                </summary>
+            </details>
+        </section>
+        <section class="contacts">
+            <div class="contacts__map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1337.2881637286582!2d33.331118!3d47.905885!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dad8b426003a85%3A0xb922b1eee523d63e!2z0YPQuy4g0KHQstGP0YLQvi3QndC40LrQvtC70LDQtdCy0YHQutCw0Y8sIDEwLCDQmtGA0LjQstC-0Lkg0KDQvtCzLCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNTAwMDA!5e0!3m2!1sru!2sua!4v1699471538159!5m2!1sru!2sua" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="contacts__details">
+                <h2 class="contacts__header">Контакты</h2>
+                <p class="contacts__details-item">Тел: +380 99 123 45 67</p>
+                <p class="contacts__details-item">Viber: +380 99 123 45 67</p>
+                <p class="contacts__details-item">Telegram: @phyholog_sergei</p>
+                <p class="contacts__details-item">Instagram: @phyholog_sergei</p>
+                <p class="contacts__details-item">E-mail: phyholog_sergei@gmail.com</p>
+                <p class="contacts__details-item">Адрес: Ул. Центральная д. 10, офис 1</p>
+            </div>
+        </section>
+        <section class="form form-discount">
+            <h2 class="form__title form__discount-title">
+                Записаться со скидкой 50 грн
+            </h2>
+            <div class="form__inputs form__inputs-discount">
+                <input class="form__input form__input-paddings form__discount-flex-item" type="text" name="username" required placeholder="Ваше имя *">
+                <input class="form__input form__input-paddings form__discount-flex-item" type="tel" name="usertel" required placeholder="Ваш телефон *">
+                <button class="btn btn_form form__discount-flex-item btn_form-discount" type="submit">Отправить</button>
+            </div>
+            <label class="form__checkbox form__checkbox_discount">
+                <input class="form__checkbox_input visually-hidden" type="checkbox">
+                <span class="form__checkbox_label">
+                    Я согласен с политикой конфиденциальности
+                </span>
+            </label>
+        </section>
+        <footer class="footer center">
+            <a class="footer__logo" href="">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <div class="footer__contacts">
+                <div class="footer__item">
+                    <img class="footer__img" src="./img/instagram-logo.png" alt="">
+                    <p class="footer_details">@phyholog_sergei</p>
+                </div>
+                <div class="footer__item">
+                    <img class="footer__img" src="./img/viber.png" alt="">
+                    <p class="footer_details">+380 99 123 45 67</p>
+                </div>
+                <div class="footer__item">
+                    <img class="footer__img" src="./img/telegram.png" alt="">
+                    <p class="footer_details">@phyholog_sergei</p>
+                </div>
+                <div class="footer__item">
+                    <img class="footer__img" src="./img/phone-call.png" alt="">
+                    <p class="footer_details">+380 99 123 45 67</p>
+                </div>
+            </div>
         </footer>
-
     </main>
 
 </body>
