@@ -17,5 +17,11 @@
   font-weight: 500;
   line-height: 1.5;
 }
+@media screen and (max-width: 375px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 /*# sourceMappingURL=services.css.map */
