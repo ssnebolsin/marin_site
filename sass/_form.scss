@@ -12,6 +12,13 @@
         gap: 30px;
         padding-left: calc(50vw - 390px);
         padding-right: calc(50vw - 395px);
+        @media screen and (max-width: 800px) {
+            padding: 0 20px;
+        }
+        @media screen and (max-width: 845px) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
     }
     &__input{
         border: 1px solid;
@@ -32,6 +39,9 @@
     }
     &__input:nth-child(2){
         order: 3;
+        @media screen and (max-width: 845px) {
+            order: 2;
+        }
     }
     &__input:nth-child(3){
         order: 4;
@@ -39,6 +49,9 @@
     &__input:nth-child(4){
         grid-row: span 3;
         order: 2;
+        @media screen and (max-width: 845px) {
+            order: 4;
+        }
     }
     &__select-wrap{
         position: relative;
@@ -128,26 +141,30 @@
         display: flex;
         justify-content: center;
         gap: 32px;
-        // padding-left: 135px;
-        // padding-right: 135px;
         padding-left: calc(50vw - 584px);
         padding-right: calc(50vw - 584px);
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 1140px) {
             flex-direction: column;
             align-items: center;
+        }
+        @media screen and (max-width: 380px) {
+            padding: 0 20px;
         }
     }
     &__discount-flex-item:nth-child(1){
         order: 1;
-        width: 360px;
+        max-width: 360px;
+        width: 100%;
     }
     &__discount-flex-item:nth-child(2){
         order: 2;
-        width: 360px;
+        max-width: 360px;
+        width: 100%;
     }
     &__discount-flex-item:nth-child(3){
         order: 3;
-        width: 360px;
+        max-width: 360px;
+        width: 100%;
     }
     &__checkbox_discount{
         margin-top: 25px;

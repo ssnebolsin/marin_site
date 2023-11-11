@@ -6,6 +6,9 @@ padding-bottom: 40px;
     padding-left: calc(50vw - 550px);
     padding-right: calc(50vw - 550px);
 }
+@media screen and (max-width: 1120px) {
+    padding-left: 20px;
+}
 
 &__item{
     margin-bottom: 20px;

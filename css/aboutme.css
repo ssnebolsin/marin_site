@@ -1,40 +1,72 @@
 .aboutme {
   display: flex;
-  background-image: url("../img/about_rectangle.jpg");
+  background: url("../img/about_rectangle.jpg") center no-repeat;
+  background-size: cover;
   gap: 50px;
   color: #fff;
-  height: 450px;
 }
 .aboutme__item {
-  padding-top: 60px;
+  padding: 60px 0;
+  max-width: 625px;
 }
 .aboutme__title {
   font-size: 36px;
   line-height: 54px;
   margin: 0;
 }
+@media screen and (max-width: 1460px) {
+  .aboutme__title {
+    text-align: center;
+  }
+}
 .aboutme__description {
   line-height: 24px;
   margin-bottom: 35px;
-  width: 625px;
+  max-width: 625px;
   margin: 0;
   margin-top: 50px;
   margin-bottom: 35px;
   font-weight: 700;
 }
+@media screen and (max-width: 1460px) {
+  .aboutme__description {
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+}
 .aboutme__buttons {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 720px) {
+  .aboutme__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .aboutme__img {
   height: 330px;
-  width: 495px;
+  max-width: 495px;
   padding-top: 60px;
+}
+@media screen and (max-width: 1460px) {
+  .aboutme__img {
+    padding-bottom: 60px;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1460px) {
+  .aboutme {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .btn_about_question {
   background: none;
   border: 2px solid #2D5E5E;
+  max-width: 250px;
 }
 
 /*# sourceMappingURL=aboutme.css.map */

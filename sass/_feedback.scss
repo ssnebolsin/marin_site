@@ -10,13 +10,11 @@
 &__item-wrapper{
     display: flex;
     gap: 43px;
+    max-width: 720px;
 }
 &__item{
-    width: 600px;
+    max-width: 600px;
     background-color: #ADDDDE;
-    @media screen and (max-width: 500px) {
-        width: 240px;
-    }
 }
 &__title-wrapper{
     display: flex;
@@ -25,7 +23,7 @@
     gap: 32px;
     padding-top: 20px;
     padding-bottom: 10px;
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 900px) {
         gap: 20px;
     }
 }
