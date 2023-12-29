@@ -309,21 +309,21 @@ template {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("..fonts/Montserrat/Montserrat-Black.woff2") format("woff2"), url("..fonts/Montserrat/Montserrat-Black.woff") format("woff");
+  src: url("../fonts/Montserrat/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("..fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("..fonts/Montserrat/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("..fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("..fonts/Montserrat/Montserrat-Light.woff") format("woff");
+  src: url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -834,6 +834,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .feedback__item-wrapper {
   display: flex;
+  align-items: center;
   gap: 43px;
   max-width: 720px;
 }
@@ -864,6 +865,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 25px;
   line-height: 24px;
   text-align: center;
+}
+.feedback__arrow {
+  cursor: pointer;
 }
 
 .last-articles {
@@ -903,9 +907,8 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 334px;
 }
 .last-articles__img {
-  width: 100%;
-  max-width: 334px;
-  height: auto;
+  width: 334px;
+  height: 230px;
 }
 .last-articles__header {
   margin: 0;

@@ -9,6 +9,7 @@
 }
 &__item-wrapper{
     display: flex;
+    align-items: center;
     gap: 43px;
     max-width: 720px;
 }
@@ -37,6 +38,9 @@
     padding: 20px 25px;
     line-height: 24px;
     text-align: center;
+}
+&__arrow{
+    cursor: pointer;
 }
 
 }
