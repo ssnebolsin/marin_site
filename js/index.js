@@ -7,16 +7,6 @@ let moveValue = 0;
 
 arrows.forEach(action)
 
-// onclick implementation
-
-// function action(item){
-//     item.onclick = () => {
-//         moveslide(item.id);
-//     }
-// }
-
-// eventListener implementation
-
 function action(item){
     item.addEventListener('click', function () {
         slideMove(wrapper, item.id)
