@@ -838,13 +838,13 @@ h1, h2, h3, h4, h5, h6 {
   gap: 43px;
   max-width: 720px;
 }
-.feedback__item {
-  max-width: 600px;
-  background-color: #ADDDDE;
-  display: none;
+.feedback__arricle-wrapper {
+  display: flex;
+  overflow: hidden;
 }
-.feedback__item-active {
-  display: block;
+.feedback__item {
+  min-width: 600px;
+  background-color: #ADDDDE;
 }
 .feedback__title-wrapper {
   display: flex;
@@ -872,6 +872,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .feedback__arrow {
   cursor: pointer;
+  display: block;
+  min-width: 17px;
+  min-height: 31px;
 }
 
 .last-articles {

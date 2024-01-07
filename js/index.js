@@ -1,11 +1,9 @@
 
 
 let arrows = Array.from(document.querySelectorAll('.feedback__arrow'))
-console.log(arrows)
-
 let articles = Array.from(document.querySelectorAll('.feedback__item'))
-
-let currentIndex
+let wrapper = document.querySelector('.feedback__arricle-wrapper')
+let moveValue = 0;
 
 arrows.forEach(action)
 
@@ -21,47 +19,49 @@ arrows.forEach(action)
 
 function action(item){
     item.addEventListener('click', function () {
-        moveslide(item.id);
-
+        slideMove(wrapper, item.id)
     })
 }
 
+function slideMove(elem, arrowId){
 
-function getcurrentindex(article, index){
-    
-    if(article.classList.contains('feedback__item-active')){
-        console.log(`currentindex - ${index}`)
-        currentIndex = index
-        
-        console.log(articles[currentIndex])
-        // article.classList.remove('feedback__item-active')
-        
-    }
-}
+    let elemWidth = elem.offsetWidth;
+    let maxMoveValue = elemWidth * (articles.length - 1)
 
-function moveslide (arrowId){
-    articles.forEach(getcurrentindex)
-    articles[currentIndex].classList.remove('feedback__item-active')
-    let newIndex
     if(arrowId === 'arrow-right'){
-        currentIndex === articles.length - 1 ?  newIndex = 0 : newIndex = currentIndex + 1
-        // slideAnimation(articles[newIndex], 'right' )
+       if (moveValue === maxMoveValue){
+            moveValue = maxMoveValue,
+            slideAnimation(elem);
+       } else {
+        moveValue += elemWidth;
+       } 
     } else if (arrowId === 'arrow-left'){
-        currentIndex === 0 ?  newIndex = articles.length - 1 : newIndex = currentIndex - 1
-        // slideAnimation(articles[newIndex], 'left' )
+        if(moveValue === 0 ){
+            moveValue = 0,
+            slideAnimation(elem);
+        } else {
+            moveValue -= elemWidth;
+        }
+          
     }
-    
-    articles[newIndex].classList.add('feedback__item-active')
+
+    elem.scroll({
+        left: moveValue,
+        behavior: "smooth",
+    })
 }
 
-// function slideAnimation(elem, direction){
-//     let articleSlide = [
-//         direction === 'left' ? { transform: "translateX(-900px)" } : { transform: "translateX(900px)" } ,
-//         // {opacity: "0"}
-//       ];
+function slideAnimation(elem){
+    let slideShake = [
+        {transform: "translate3d(-1px, 0, 0)"},
+        {transform: "translate3d(2px, 0, 0)"},
+        {transform: "translate3d(-4px, 0, 0)"},
+        {transform: "translate3d(4px, 0, 0)"}
+      ];
     
-//     let articleTiming = {
-//         duration: 200,
-//       };
-//     elem.animate(articleSlide, articleTiming)
-// }
+    let shakeTiming = {
+        duration: 200,
+      };
+
+    elem.animate(slideShake, shakeTiming)
+}

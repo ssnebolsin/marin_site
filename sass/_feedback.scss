@@ -13,12 +13,21 @@
     gap: 43px;
     max-width: 720px;
 }
+&__arricle-wrapper{
+    display: flex;
+    // gap: 10px;
+    overflow:hidden;
+}
 &__item{
-    max-width: 600px;
+    min-width: 600px;
     background-color: #ADDDDE;
-    display: none;
+    // position: absolute;
+    // left: -300px;
+    // display: inline-block;
+    // display: none;
     &-active{
-        display: block;
+        // position: relative;
+        // left: auto;
     }
 }
 &__title-wrapper{
@@ -45,6 +54,8 @@
 }
 &__arrow{
     cursor: pointer;
+    display: block;
+    min-width: 17px;
+    min-height: 31px;
 }
-
 }
