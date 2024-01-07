@@ -16,6 +16,10 @@
 &__item{
     max-width: 600px;
     background-color: #ADDDDE;
+    display: none;
+    &-active{
+        display: block;
+    }
 }
 &__title-wrapper{
     display: flex;

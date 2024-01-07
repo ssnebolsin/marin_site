@@ -841,6 +841,10 @@ h1, h2, h3, h4, h5, h6 {
 .feedback__item {
   max-width: 600px;
   background-color: #ADDDDE;
+  display: none;
+}
+.feedback__item-active {
+  display: block;
 }
 .feedback__title-wrapper {
   display: flex;
